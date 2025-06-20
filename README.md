@@ -2,6 +2,9 @@
 
 This project uses PaddleOCR to extract text from images and LangChain + OpenAI to generate intelligent question-answering capabilities over the extracted text. It also includes evaluation using BLEU, METEOR, and ROUGE scores.
 
+## Demo Video
+
+The video of different swimlane diagrams parsing through OCR and getting answers for some queries is captured [here](https://drive.google.com/file/d/16Lsx-SoG45bSPrOLD0FcgWfRiras6VHQ/view?usp=sharing)
 
 ## 🚀 Features
 
