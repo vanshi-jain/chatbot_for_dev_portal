@@ -1,0 +1,8 @@
+1. CUSTOMER Place a Finish Product Order
+2. SALES Confirm if Cancel the order is
+3. NO order received
+4. STOCKS Check the Deliver the inventory Is the product
+5. NO order in stock?
+6. YES
+7. FINANCE Check Processing credit card Is the card
+8. YES the payment valid?

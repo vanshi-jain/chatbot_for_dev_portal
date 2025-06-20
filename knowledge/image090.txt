@@ -1,0 +1,55 @@
+# Incident Management - Identification and Logging Sequence
+
+## Sequential Process Flow
+
+1. Incident Initiation
+   * Event: Initial incident occurs or is reported
+   * Actor: Incident Manager
+   * Action: Receives initial incident notification
+
+2. Incident Identification and Logging
+   * Event: Incident is formally identified and logged into system
+   * Actor: Event Management/Service Desk
+   * Action: Creates incident record and documents initial details
+
+3. Configuration Item Search
+   * Event: CMDB is searched for impacted Configuration Items
+   * Actor: Service Desk Analyst
+   * Action: Searches Configuration Management Database to identify affected CIs
+
+4. Configuration Item Assessment
+   * Event: Decision point - CI Found?
+   * Actor: Service Desk Analyst
+   * Action: Evaluates search results to determine if relevant CI is identified
+   * Outcomes:
+     - If YES → Proceed to CI Assessment
+     - If NO → Proceed to Incident Analyst Assignment
+
+5. Configuration Item Evaluation (Found Path)
+   * Event: Configuration Item is assessed for impact
+   * Actor: Service Desk Analyst
+   * Action: Analyzes the identified CI and its potential impact
+
+6. Service Specialist Notification
+   * Event: Service specialist is alerted about the incident
+   * Actor: Service Desk Analyst
+   * Action: Notifies appropriate service specialist about the CI-related incident
+
+7. Incident Analyst Assignment (No CI Found Path)
+   * Event: Incident analyst is assigned to handle the case
+   * Actor: Service Desk Analyst
+   * Action: Assigns incident to available incident analyst for further investigation
+
+8. Process Continuation
+   * Event: Process continues to next phase (2.1)
+   * Actor: System/Incident Manager
+   * Action: Transitions to subsequent incident management phase
+
+## Key Process Characteristics
+
+- Primary Actors: Incident Manager (oversight), Event Management/Service Desk (logging), Service Desk Analyst (analysis and routing)
+- Critical Decision Point: CI identification determines the routing path for incident handling
+- Dual Routing: Process splits based on whether Configuration Item is found or not
+- CMDB Integration: Heavy reliance on Configuration Management Database for impact assessment
+- Specialist Escalation: CI-related incidents are routed to specialized resources
+- Process Flow: This represents Phase 1.0 with continuation to Phase 2.1

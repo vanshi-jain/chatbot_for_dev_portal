@@ -1,0 +1,58 @@
+E-commerce Order Processing Sequence
+
+## Sequential Flow of Events
+
+### 1. Order Initiation (Customer)
+- Event: Customer places a product order
+- Actor: Customer
+- Action: Initiates the ordering process
+
+### 2. Order Confirmation (Sales)
+- Event: Confirm if order is received
+- Actor: Sales team
+- Decision Point: Order received successfully?
+  - If NO: Process moves to cancellation
+  - If YES: Process continues to inventory check
+
+### 3. Inventory Verification (Stock)
+- Event: Check the inventory
+- Actor: Stock/Warehouse team
+- Decision Point: Is the product in stock?
+  - If NO: Order gets cancelled
+  - If YES: Process continues to payment verification
+
+### 4. Payment Processing (Finance)
+- Event: Check credit card
+- Actor: Finance team
+- Decision Point: Is the card valid?
+  - If NO: Order gets cancelled
+  - If YES: Process payment
+
+### 5. Payment Completion (Finance)
+- Event: Processing the payment
+- Actor: Finance team
+- Action: Complete the financial transaction
+
+### 6. Order Fulfillment (Stock)
+- Event: Deliver the order
+- Actor: Stock/Fulfillment team
+- Action: Prepare and ship the product
+
+### 7. Process Completion (Customer)
+- Event: Finish
+- Actor: System/Customer
+- Action: Order process successfully completed
+
+## Cancellation Points
+
+The order can be cancelled at three decision points:
+1. Order not received → Cancel the order
+2. Product not in stock → Cancel the order
+3. Invalid payment method → Cancel the order
+
+## Key Stakeholders
+
+- Customer: Initiates and receives the order
+- Sales: Confirms order receipt
+- Stock: Manages inventory and fulfillment
+- Finance: Handles payment processing

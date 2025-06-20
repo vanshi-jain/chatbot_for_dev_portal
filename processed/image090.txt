@@ -1,0 +1,1 @@
+1. Incident management 1.0IdentificationandLogging 1.1 Initial Event Management 1.2 Identify and the Accident Service Desk 1.5 Search CMDB Yes 1.4 CI Found? Allert Service for Impacked Assess CI Specialist 1.6 No Assign Incident 2.1 Analyst

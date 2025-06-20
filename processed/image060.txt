@@ -1,0 +1,4 @@
+1. START Review Draw Draft Information Flowchart Write Details Business Analyst Review with End
+2. NO Task list Review User affected?
+3. NO Refine Draft
+4. YES END Organize Tasks End User Review and Refine Complete? -YES

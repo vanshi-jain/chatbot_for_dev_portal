@@ -1,0 +1,69 @@
+# Swimlane Flow - Sequence of Events
+
+## Sequential Process Flow
+
+1. Process Initiation
+   * Event: Process begins
+   * Actor: System/Business Analyst
+   * Action: Initiates the business analysis workflow
+
+2. Information Review
+   * Event: Available information is reviewed
+   * Actor: Business Analyst
+   * Action: Reviews existing documentation and requirements
+
+3. Flowchart Creation
+   * Event: Initial flowchart is drafted
+   * Actor: Business Analyst
+   * Action: Creates preliminary flowchart design
+
+4. Detail Documentation
+   * Event: Detailed specifications are written
+   * Actor: Business Analyst
+   * Action: Documents comprehensive process details
+
+5. Internal Review
+   * Event: Internal quality check is performed
+   * Actor: Business Analyst
+   * Action: Conducts self-review of work
+
+6. End User Review Session
+   * Event: Flowchart is presented to end user
+   * Actor: Business Analyst
+   * Action: Facilitates review meeting with end user
+
+7. Task Impact Assessment
+   * Event: Decision point - Task list affected?
+   * Actor: Business Analyst
+   * Action: Evaluates if task list requires updates
+   * Outcomes: 
+     - If NO → Proceed to Draft Refinement
+     - If YES → Proceed to Task Organization
+
+8. Task Organization
+   * Event: Task list is organized and updated
+   * Actor: Business Analyst
+   * Action: Reorganizes tasks based on new requirements
+
+9. Draft Refinement
+   * Event: Draft is refined based on feedback
+   * Actor: Business Analyst
+   * Action: Updates and improves the flowchart draft
+
+10. User Review and Refinement
+    * Event: End user provides refinement feedback
+    * Actor: End User
+    * Action: Reviews refined version and provides input
+
+11. Completion Assessment
+    * Event: Decision point - Is work complete?
+    * Actor: End User/Business Analyst
+    * Action: Evaluates if requirements are fully met
+    * Outcomes:
+      - If NO → Return to End User Review Session (creates feedback loop)
+      - If YES → Proceed to Process Completion
+
+12. Process Completion
+    * Event: Process is finalized
+    * Actor: Business Analyst
+    * Action: Concludes the workflow and delivers final product

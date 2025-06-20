@@ -1,0 +1,85 @@
+# Pre-Press Process - Sequence of Events
+
+## Sequential Process Flow
+
+1. Job Ticket Creation and Routing
+   * Event: Job ticket is obtained and sent for scheduling
+   * Actor: CSR (Customer Service Representative)
+   * Action: Gets job ticket and forwards to scheduling department
+
+2. Internal Scheduling
+   * Event: Job is scheduled internally within plant operations
+   * Actor: Plant Manager
+   * Action: Reviews job requirements and creates internal schedule
+
+3. Pre-Press Scheduling
+   * Event: Pre-press work is scheduled for proofs
+   * Actor: Plant Manager
+   * Action: Schedules pre-press activities and proof creation
+
+4. Proof Creation
+   * Event: Pre-press proofs are created for approval
+   * Actor: Plant Manager
+   * Action: Creates pre-press proofs for customer review
+
+5. Proof Approval Decision
+   * Event: Decision point - Are pre-press proofs approved?
+   * Actor: Plant Manager/Customer
+   * Action: Evaluates proof quality and customer requirements
+   * Outcomes:
+     - If NO → Return to Proof Creation (creates revision loop)
+     - If YES → Proceed to Press Scheduling
+
+6. Press Scheduling
+   * Event: Press dates are scheduled for approved job
+   * Actor: Plant Manager
+   * Action: Schedules actual press run dates
+
+7. Ticket Return with Schedule
+   * Event: Job ticket is returned with scheduled print date
+   * Actor: Plant Manager
+   * Action: Returns completed ticket to CSR with scheduling information
+
+8. Customer Notification
+   * Event: Customer is informed of scheduled print date
+   * Actor: CSR
+   * Action: Communicates scheduled print date to customer
+
+9. Electric Pre-Press Setup
+   * Event: Electronic pre-press process is initiated
+   * Actor: Pre-Press Operator
+   * Action: Sets up electronic pre-press workflow
+
+10. Job Information Receipt
+    * Event: Job ticket and art bag/job information are received
+    * Actor: Pre-Press Operator
+    * Action: Receives and reviews job specifications and artwork
+
+11. File Migration
+    * Event: Customer files are migrated to in-house servers
+    * Actor: Pre-Press Operator
+    * Action: Transfers customer files to internal server systems
+
+12. File Format Refinement
+    * Event: Customer files are refined into correct file format
+    * Actor: Pre-Press Operator
+    * Action: Converts and optimizes files for printing requirements
+
+13. Layout Imposition
+    * Event: Electronic imposition of layout is performed
+    * Actor: Pre-Press Operator
+    * Action: Creates proper layout arrangement for printing
+
+14. Pre-Press Quality Control
+    * Event: Pre-press proofs undergo quality control review
+    * Actor: Pre-Press Operator
+    * Action: Performs final quality check on pre-press materials
+
+## Key Process Characteristics
+
+- Primary Actors: CSR (customer interface), Plant Manager (scheduling/approval), Pre-Press Operator (technical execution)
+- Critical Decision Point: Proof approval determines whether process continues or requires revision
+- Feedback Loop: Proof creation can repeat until approval is achieved
+- Dual Workflow: Management scheduling runs parallel to technical pre-press operations
+- Quality Gates: Multiple quality control points ensure final output meets standards
+- Customer Communication: Process includes customer notification and approval stages

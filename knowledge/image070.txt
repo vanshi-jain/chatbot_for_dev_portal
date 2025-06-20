@@ -1,0 +1,80 @@
+# File Processing Workflow - Sequence of Events
+
+## Sequential Process Flow
+
+1. Process Initiation
+   * Event: File processing workflow begins
+   * Actor: Partner
+   * Action: Starts the file submission process
+
+2. Data File Submission
+   * Event: Data files are submitted for processing
+   * Actor: Partner
+   * Action: Submits data files to the FTP server
+
+3. File Receipt
+   * Event: Files are received on FTP server
+   * Actor: FTP Server
+   * Action: Receives and stores submitted files
+
+4. Scheduled Processing Trigger
+   * Event: Automated processing schedule activates
+   * Actor: Straight-through Processing System
+   * Action: Triggers processing at scheduled times (4:00, 7:00 & 13:00)
+   * Note: Should probably be event-based, triggered when file arrives
+
+5. File Transfer to Working Directory
+   * Event: Files are moved to processing location
+   * Actor: Straight-through Processing System
+   * Action: Moves files from FTP location to working directory
+
+6. File Trigger Activation
+   * Event: File processing trigger is activated
+   * Actor: Straight-through Processing System
+   * Action: Initiates file processing sequence
+
+7. File Processing Execution
+   * Event: Files are processed according to business rules
+   * Actor: Straight-through Processing System
+   * Action: Processes files and validates data
+
+8. Processing Success Evaluation
+   * Event: Decision point - Processing successful?
+   * Actor: Straight-through Processing System
+   * Action: Evaluates processing results
+   * Outcomes:
+     - If YES → Proceed to Data Storage
+     - If NO → Proceed to Rejection Processing
+
+9. Data Storage (Success Path)
+   * Event: Processed data is stored in system
+   * Actor: System of Record
+   * Action: Stores validated data in database
+
+10. Confirmation Processing
+    * Event: Processing confirmation is generated
+    * Actor: FTP Server
+    * Action: Creates confirmation record for successful processing
+
+11. Confirmation Notification
+    * Event: Partner is notified of successful processing
+    * Actor: Partner
+    * Action: Receives confirmation via email notification
+
+12. Rejection Processing (Error Path)
+    * Event: Processing rejection is handled
+    * Actor: FTP Server
+    * Action: Creates rejection record for failed processing
+
+13. Rejection Notification
+    * Event: Partner is notified of processing failure
+    * Actor: Partner
+    * Action: Receives rejection notification via email
+
+## Key Process Characteristics
+
+- Primary Actors: Partner (initiates), Straight-through Processing System (executes), FTP Server (manages), System of Record (stores)
+- Scheduling: Automated processing at 4:00, 7:00, and 13:00 (recommendation to make event-based)
+- Decision Point: Success/failure evaluation determines notification path
+- Dual Outcomes: Success leads to data storage and confirmation; failure leads to rejection notification
+- Notification System: Email-based communication for both success and failure scenarios

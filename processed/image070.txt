@@ -1,0 +1,1 @@
+1. Submit data Process Process files confirmations rejects Start Confirms Rejects Should probably be 4:00, 7:00 &13:00 event-based, triggered when file arrives Yes Move files to Process files Successful working dir No File Trigger

@@ -1,0 +1,2 @@
+1. Consultant Submit Expense Report Receive Correct Manager Expense Report -NO→ Return Report Report
+2. YES Forward Report Data Entry Clerk Enter Data to System

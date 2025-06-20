@@ -1,0 +1,140 @@
+Credit Application & Taxi Booking Process Sequence
+
+## Sequential Flow of Events
+
+### Credit Application Process (Upper Flow)
+
+#### 1. Customer Initiation
+- Event: Customer decides to buy product
+- Actor: Customer
+- Action: Initiates purchase process (diamond shape indicates decision point)
+
+#### 2. Credit Application
+- Event: Customer fills out credit form
+- Actor: Customer
+- Action: Submits credit application
+
+#### 3. Sales Processing
+- Event: Sales call conducted
+- Actor: Sales team
+- Action: Contact customer and process initial inquiry
+
+#### 4. Order Entry
+- Event: Order entry completed
+- Actor: Sales team
+- Action: Enter order details into system
+
+#### 5. Order Form Processing
+- Event: Order form generated
+- Actor: Sales team
+- Action: Create formal order documentation
+
+#### 6. Credit Evaluation
+- Event: Credit criteria assessment
+- Actor: Management
+- Action: Review credit application against criteria
+- Decision Point: Credit assessment outcome
+  - Bad Credit: Process terminates or requires additional steps
+  - Good Credit: Process continues
+
+#### 7. Credit Check
+- Event: Formal credit check performed
+- Actor: Credit Department
+- Decision Point: Credit check results
+  - Not OK: Process may terminate or require review
+  - OK: Process continues to account review
+
+#### 8. Account Balance Review
+- Event: Review accounts receivable balance
+- Actor: Credit Department
+- Decision Point: Account balance assessment
+  - High Balance: May require additional review
+  - OK: Process continues to credit calculation
+
+#### 9. Credit Terms Calculation
+- Event: Calculate credit terms
+- Actor: Credit Department
+- Action: Determine appropriate credit terms and limits
+
+#### 10. Credit Approval
+- Event: Terms approved
+- Actor: Credit Department
+- Action: Final approval of credit terms
+
+#### 11. Credit Report Generation
+- Event: Credit issued report
+- Actor: Management
+- Action: Generate final credit approval documentation
+
+### Taxi Booking Process (Lower Flow)
+
+#### 1. Booking Methods
+- Phone Booking: Customer calls for taxi
+- Online Booking: Customer uses web interface
+
+#### 2. Operator Processing
+- Event: Operator makes booking
+- Actor: Taxi Service Operator
+- Action: Process booking request
+
+#### 3. Service Coordination
+- Event: Taxi service server coordination
+- Actor: Taxi Service System
+- Action: Coordinate available drivers and vehicles
+
+#### 4. Driver Assignment
+- Event: Taxi driver assigned
+- Actor: Taxi Driver
+- Action: Accept booking and proceed to pickup
+
+#### 5. Workstation Management
+- Event: Workstation desktop management
+- Actor: Taxi Service System
+- Action: Track and manage booking through system
+
+## Key Decision Points
+
+### Credit Process Decision Points:
+1. Buy Product: Customer decides whether to proceed
+2. Credit Criteria: Management evaluates creditworthiness
+3. Credit Check: Credit Department validates credit status
+4. Account Balance: Credit Department reviews existing balances
+
+### Parallel Processes:
+- Credit Application Process: Handles financial approval
+- Taxi Booking Process: Handles service booking (possibly for delivery or customer transport)
+
+## Stakeholders and Responsibilities
+
+### Customer
+- Initiates purchase decision
+- Completes credit application
+- Uses booking services
+
+### Sales Team
+- Conducts sales calls
+- Processes order entry
+- Generates order forms
+
+### Management
+- Sets credit criteria
+- Reviews credit applications
+- Generates final reports
+
+### Credit Department
+- Performs credit checks
+- Reviews account balances
+- Calculates credit terms
+- Provides final approval
+
+### Taxi Service Operations
+- Processes bookings
+- Coordinates drivers
+- Manages service delivery
+
+## Process Integration
+
+This appears to be an integrated business process where:
+1. Credit approval enables product purchase
+2. Taxi service may be used for product delivery or customer transport
+3. Multiple touchpoints ensure comprehensive customer service

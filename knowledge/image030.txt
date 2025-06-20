@@ -1,0 +1,151 @@
+Customer Service Request Processing Sequence
+
+## Sequential Flow of Events
+
+### Phase 1: Initial Customer Contact
+
+#### 1. Service Request Initiation
+- Event: Request Service
+- Actor: Customer
+- Action: Customer initiates a service request
+
+#### 2. Information Gathering
+- Event: Provide Customer Information
+- Actor: Customer
+- Action: Customer provides necessary details and information
+
+#### 3. Request Reception
+- Event: Receive Service Request
+- Actor: Customer Service Representative
+- Action: CSR receives and acknowledges the service request
+
+#### 4. Service Selection
+- Event: Select Service Package
+- Actor: Customer Service Representative
+- Action: CSR determines appropriate service package based on request
+
+#### 5. Information Collection
+- Event: Gather Customer Information
+- Actor: Customer Service Representative
+- Action: CSR collects comprehensive customer information
+
+### Phase 2: Customer Validation Process
+
+#### 6. Customer Information Inquiry
+- Event: Perform Customer Information Inquiry
+- Actor: Customer Service Representative
+- Action: CSR conducts detailed customer information verification
+
+#### 7. Customer Existence Check
+- Event: Customer Found?
+- Actor: Customer Service Representative
+- Decision Point: Does customer exist in system?
+  - NO: Create New Customer (Step 8)
+  - YES: Check Address (Step 9)
+
+#### 8. New Customer Creation (If Needed)
+- Event: Create New Customer
+- Actor: Customer Service Representative
+- Action: Add new customer to system database
+
+#### 9. Address Validation
+- Event: Check Address
+- Actor: Customer Service Representative
+- Decision Point: Is customer address valid and current?
+  - NO: Address Found & Validated? (Step 10)
+  - YES: Check Service Availability (Step 12)
+
+#### 10. Address Validation Process
+- Event: Address Found & Validated?
+- Actor: Customer Service Representative
+- Decision Point: Can address be found and validated?
+  - NO: Address not Valid (Step 11)
+  - YES: Check Service Availability (Step 12)
+
+#### 11. Address Issue Handling
+- Event: Address not Valid
+- Actor: Customer Service Representative
+- Action: Handle invalid address issue → Notify Customer (Step 17)
+
+#### 12. Service Availability Check
+- Event: Check Service Availability
+- Actor: Customer Service Representative
+- Decision Point: Is service available at customer location?
+  - NO: Service not Available at Address (Step 13)
+  - YES: Check Resource Availability (Step 14)
+
+#### 13. Service Unavailability Handling
+- Event: Service not Available at Address
+- Actor: Customer Service Representative
+- Action: Handle service unavailability → Notify Customer (Step 17)
+
+### Phase 3: Resource and Service Validation
+
+#### 14. Resource Assessment
+- Event: Check Resource Availability
+- Actor: Customer Service Representative
+- Action: Verify if necessary resources are available
+
+#### 15. Resource Availability Decision
+- Event: Resources Available?
+- Actor: Customer Service Representative
+- Decision Point: Are required resources available?
+  - NO: Return to Notify Customer (Step 17) via dashed line
+  - YES: Perform Service Portability (Step 16)
+
+#### 16. Service Portability Check
+- Event: Perform Service Portability
+- Actor: Customer Service Representative
+- Action: Verify service can be ported/transferred to customer
+
+#### 17. Credit Verification
+- Event: Check Customer Credit
+- Actor: Customer Service Representative
+- Action: Perform customer credit assessment
+
+#### 18. Pre-Order Validation
+- Event: Pre-Order Validation Results
+- Actor: Customer Service Representative
+- Action: Complete pre-order validation process
+
+### Phase 4: Process Completion
+
+#### 19. Customer Notification
+- Event: Notify Customer
+- Actor: Customer Service Representative
+- Action: Inform customer of process results (approval, denial, or issues)
+
+#### 20. Final Validation Results
+- Event: Consolidated Pre-Order Validation Results
+- Actor: Customer Service Representative
+- Action: Provide comprehensive validation results to customer
+
+## Key Decision Points Summary
+
+### Critical Validation Gates:
+1. Customer Existence: New vs. existing customer handling
+2. Address Validation: Ensures service can be delivered to location
+3. Service Availability: Confirms service coverage at address
+4. Resource Availability: Ensures capacity to fulfill request
+5. Credit Check: Financial validation for service approval
+
+### Failure/Exception Paths:
+- Invalid Address → Customer Notification
+- Service Unavailable → Customer Notification  
+- Insufficient Resources → Customer Notification (via dashed feedback loop)
+
+## Process Characteristics
+
+### Two-Actor System:
+- Customer: Initiates request and provides information
+- Customer Service Representative: Handles all processing, validation, and decision-making
+
+### Validation-Heavy Process:
+- Multiple checkpoints ensure service can be delivered
+- Comprehensive verification before final approval
+- Clear exception handling for common failure scenarios
+
+### Feedback Loops:
+- Dashed line shows resource unavailability feedback
+- Multiple paths converge on customer notification
+- Consolidated results provide complete validation outcome

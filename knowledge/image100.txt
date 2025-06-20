@@ -1,0 +1,80 @@
+# Software Development - Sequence of Events
+
+## Sequential Process Flow
+
+1. Development Process Initiation
+   * Event: Software development process begins
+   * Actor: Software Development Team
+   * Action: Initiates the development workflow
+
+2. Requirements Documentation Receipt
+   * Event: Requirements document is received for requested features
+   * Actor: Software Design Team
+   * Action: Receives and reviews requirements documentation from stakeholders
+
+3. Specification Development
+   * Event: Specifications are developed to meet requirements
+   * Actor: Software Design Team
+   * Action: Creates detailed specifications based on received requirements
+
+4. Internal Design Development
+   * Event: Internal design is developed to meet specifications
+   * Actor: Software Design Team
+   * Action: Creates internal system design architecture
+
+5. External Design Development
+   * Event: External design for user interface is developed
+   * Actor: Software Design Team
+   * Action: Designs user interface and external system interactions
+
+6. Design Impact Assessment
+   * Event: Decision point - Does external design necessitate change in internal design?
+   * Actor: Software Design Team
+   * Action: Evaluates if external design requires internal design modifications
+   * Outcomes:
+     - If NO → Proceed to Programming Time Scheduling
+     - If YES → Return to Internal Design Development (creates design iteration loop)
+
+7. Programming Time Scheduling
+   * Event: Programming time is scheduled for development work
+   * Actor: Software Development Team
+   * Action: Schedules development resources and timeline
+
+8. Code Development
+   * Event: Code is written based on approved designs
+   * Actor: Software Coding Team
+   * Action: Implements code according to design specifications
+
+9. Testing Plan Creation
+   * Event: Code testing plan is written
+   * Actor: Software Coding Team
+   * Action: Develops comprehensive testing strategy and test cases
+
+10. Quality Assurance Testing
+    * Event: Application undergoes QA testing
+    * Actor: Software Coding Team
+    * Action: Executes testing plan and validates application functionality
+
+11. Bug Detection Assessment
+    * Event: Decision point - Bugs found during testing?
+    * Actor: Software Coding Team
+    * Action: Evaluates testing results for defects
+    * Outcomes:
+      - If NO → Proceed to Release Preparation
+      - If YES → Return to Code Development (creates bug fix iteration loop)
+
+12. Release Preparation
+    * Event: Application is prepared for future build release
+    * Actor: Software Development Team
+    * Action: Finalizes application for deployment and release
+
+## Key Process Characteristics
+
+- Primary Actors: Software Development Team (coordination), Software Design Team (architecture), Software Coding Team (implementation)
+- Two Critical Decision Points: 
+  - Design compatibility assessment (creates design iteration loop)
+  - Bug detection evaluation (creates development iteration loop)
+- Iterative Loops: Process includes two potential feedback loops for design refinement and bug fixing
+- Cross-functional Flow: Process spans multiple specialized teams with handoffs
+- Quality Gates: Multiple quality control points ensure final product meets requirements
+- Linear Progression: Despite loops, overall flow progresses from requirements through release

@@ -1,0 +1,161 @@
+Payroll Processing Workflow Sequence
+
+## Sequential Flow of Events
+
+### Phase 1: Payroll Cycle Initiation
+
+#### 1. Payroll Cycle Closure
+- Event: Payroll Cycle Closes
+- Actor: Human Resources
+- Action: HR initiates the payroll cycle closure process
+
+#### 2. Employee Information Entry
+- Event: Complete Entering New Employee Info
+- Actor: Human Resources
+- Action: HR enters all new employee information into the system
+
+#### 3. Information Validation
+- Event: All Personal Info Correct?
+- Actor: Human Resources
+- Decision Point: Verify accuracy of all employee personal information
+  - NO: Enter Corrected Personal Info (Step 4)
+  - YES: Employee enters payroll period hours (Step 5)
+
+#### 4. Information Correction (If Needed)
+- Event: Enter Corrected Personal Info
+- Actor: Human Resources
+- Action: HR corrects any inaccurate employee information
+- Flow: Returns to validation check (Step 3)
+
+### Phase 2: Time Entry and Approval
+
+#### 5. Time Entry
+- Event: Enter Payroll Period Hours
+- Actor: Employee
+- Action: Employees submit their hours for the payroll period
+
+#### 6. Managerial Review
+- Event: Review & Approve as Needed
+- Actor: Manager
+- Action: Manager reviews and approves employee submitted hours
+
+#### 7. Time Correction (If Needed)
+- Event: Change or Correct Info & How Time Is Logged
+- Actor: Employee
+- Action: Employee makes necessary corrections to time entries
+
+### Phase 3: Payroll Validation and Processing
+
+#### 8. Completeness Review
+- Event: Review Completeness
+- Actor: Payroll Department
+- Action: Payroll team reviews all submissions for completeness
+
+#### 9. Employee Reporting Check
+- Event: All Employees Reported?
+- Actor: Payroll Department
+- Decision Point: Have all employees submitted their time?
+  - NO: Contact Employees Who Didn't Report Hours (Step 10)
+  - YES: Start Review Process (Step 11)
+
+#### 10. Missing Time Follow-up
+- Event: Contact Employees Who Didn't Report Hours
+- Actor: Payroll Department
+- Action: Reach out to employees who haven't submitted time
+- Flow: Returns to completeness review (Step 8)
+
+#### 11. Review Process Initiation
+- Event: Start Review Process / Next
+- Actor: Payroll Department
+- Action: Begin detailed payroll review process
+
+#### 12. Paid Time Off Validation
+- Event: Paid Time off OK?
+- Actor: Payroll Department
+- Decision Point: Verify PTO calculations are correct
+  - NO: Contact Employee (Step 13)
+  - YES: Overtime Review (Step 14)
+
+#### 13. PTO Issue Resolution
+- Event: Contact Employee
+- Actor: Payroll Department
+- Action: Resolve PTO discrepancies with employee
+- Flow: Returns to PTO validation (Step 12)
+
+#### 14. Overtime Authorization
+- Event: Overtime OK?
+- Actor: Manager (via Payroll coordination)
+- Decision Point: Is overtime approved and authorized?
+  - NO: Approve Overtime (Step 15)
+  - YES: Finalize for Batch Processing (Step 16)
+
+#### 15. Overtime Approval Process
+- Event: Approve Overtime
+- Actor: Manager
+- Action: Manager provides overtime authorization
+- Flow: Continues to batch processing (Step 16)
+
+### Phase 4: Final Processing and Payment
+
+#### 16. Batch Preparation
+- Event: Finalize for Batch Processing
+- Actor: Payroll Department
+- Action: Prepare payroll data for batch processing
+
+#### 17. Data Transmission
+- Event: Send Data to Payroll Processor
+- Actor: Payroll Department
+- Action: Submit payroll data to external payroll processor
+
+#### 18. Data Validation
+- Event: Data Accepted?
+- Actor: Payroll Vendor
+- Decision Point: Is the submitted payroll data valid and complete?
+  - NO: Correct Errors (Step 19)
+  - YES: Produce Payments (Step 20)
+
+#### 19. Error Correction
+- Event: Correct Errors
+- Actor: Payroll Department
+- Action: Fix any data errors identified by payroll processor
+- Flow: Returns to data transmission (Step 17)
+
+#### 20. Payment Generation
+- Event: Produce Payments
+- Actor: Payroll Vendor
+- Action: Generate and distribute employee payments
+
+## Key Decision Points Summary
+
+### Critical Validation Gates:
+1. Personal Information Accuracy: Ensures employee data is correct
+2. Employee Reporting Completeness: All employees have submitted time
+3. PTO Validation: Paid time off calculations are accurate
+4. Overtime Authorization: Manager approval for overtime hours
+5. Data Acceptance: Payroll processor validates submitted data
+
+### Error Correction Loops:
+- Information Correction: HR can fix employee data
+- Missing Time Follow-up: Payroll contacts non-reporting employees
+- PTO Resolution: Direct employee contact for PTO issues
+- Data Error Correction: Fix processor-identified errors
+
+## Process Characteristics
+
+### Five-Actor Collaboration:
+- Human Resources: Manages employee information and cycle initiation
+- Employee: Submits time and makes corrections
+- Manager: Approves hours and overtime
+- Payroll Department: Coordinates validation and processing
+- Payroll Vendor: Handles final processing and payment generation
+
+### Quality Control Focus:
+- Multiple validation checkpoints throughout process
+- Clear error correction paths at each stage
+- Manager approval required for overtime
+- External vendor validation before payment
+
+### Cyclical Nature:
+- Process repeats for each payroll period
+- Built-in feedback loops for continuous improvement
+- Standardized workflow ensures consistency

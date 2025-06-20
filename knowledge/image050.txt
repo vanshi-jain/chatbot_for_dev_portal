@@ -1,0 +1,79 @@
+# Expense Reporting Process Sequence
+
+## Sequential Flow of Events
+
+### Phase 1: Report Submission
+
+#### 1. Expense Report Creation
+- Event: Submit Expense Report
+- Actor: Consultant
+- Action: Consultant creates and submits expense report for reimbursement
+
+### Phase 2: Management Review and Approval
+
+#### 2. Report Reception
+- Event: Receive Expense Report
+- Actor: Manager
+- Action: Manager receives the submitted expense report for review
+
+#### 3. Report Validation
+- Event: Correct Report?
+- Actor: Manager
+- Decision Point: Manager evaluates the accuracy and completeness of the expense report
+  - NO: Return Report (Step 4)
+  - YES: Forward Report (Step 5)
+
+#### 4. Report Correction Process
+- Event: Return Report
+- Actor: Manager
+- Action: Manager returns report to consultant for corrections
+- Flow: Report goes back to consultant for resubmission (returns to Step 1)
+
+#### 5. Report Approval
+- Event: Forward Report
+- Actor: Manager
+- Action: Manager approves and forwards the report to data entry
+
+### Phase 3: Data Processing
+
+#### 6. System Entry
+- Event: Enter Data to System
+- Actor: Data Entry Clerk
+- Action: Data entry clerk inputs the approved expense report information into the financial system
+
+## Process Characteristics
+
+### Three-Actor Workflow:
+- Consultant: Initiates process by submitting expense reports
+- Manager: Reviews, validates, and approves/rejects reports
+- Data Entry Clerk: Processes approved reports into the system
+
+### Quality Control Mechanism:
+- Single validation checkpoint with manager review
+- Clear rejection path allowing reports to be returned for correction
+- Linear approval process ensuring proper authorization before system entry
+
+### Process Flow Pattern:
+- Sequential processing with clear handoffs between roles
+- Correction loop enables quality improvement without process termination
+- Final data entry completes the expense reimbursement workflow
+
+## Key Decision Point
+
+### Report Correctness Assessment:
+- Criteria: Manager evaluates accuracy, completeness, policy compliance
+- Approval Path: Correct reports proceed to data entry
+- Rejection Path: Incorrect reports return to consultant for revision
+
+## Potential Process Improvements
+
+### Current Strengths:
+- Clear role separation and responsibilities
+- Built-in quality control with manager approval
+- Simple, easy-to-follow workflow
+
+### Areas for Enhancement:
+- Could benefit from automated validation rules
+- Multiple approval levels for high-value expenses
+- Digital workflow integration to reduce manual handoffs
+- Audit trail documentation at each step
