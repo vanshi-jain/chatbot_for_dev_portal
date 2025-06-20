@@ -5,7 +5,7 @@ This project uses PaddleOCR to extract text from images and LangChain + OpenAI t
 
 ## 🚀 Features
 
-- OCR using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+- OCR using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR), results of OCR can be found in this [drive](https://drive.google.com/drive/folders/1gfpbGyFaQiVp3aE1lGQbtLybiTdHQKTk?usp=sharing)
 - Context-aware Q&A using LangChain and OpenAI GPT
 - Text similarity evaluation using BLEU, METEOR, and ROUGE
 - Interactive UI built with Streamlit
