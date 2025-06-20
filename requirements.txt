@@ -1,0 +1,22 @@
+# Core
+streamlit
+numpy
+Pillow
+python-dotenv
+paddleocr
+
+# LangChain & OpenAI
+langchain
+openai
+
+# FAISS for vector store
+faiss-cpu
+
+# NLTK & ROUGE for evaluation
+nltk
+rouge-score
+
+# Optional: Needed for PaddleOCR dependencies
+paddlepaddle-gpu==3.0.0  # if using GPU
+opencv-python-headless
+scikit-image
