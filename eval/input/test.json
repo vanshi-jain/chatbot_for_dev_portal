@@ -1,0 +1,223 @@
+[
+    {
+        "image": "image010.png",
+        "queries": [
+            {
+              "question": "Which department is responsible for placing a product order?",
+              "expected": "Customer"
+            },
+            {
+              "question": "What happens if the order is not received during the confirmation step?",
+              "expected": "The order is cancelled"
+            },
+            {
+              "question": "What does the Stock department do after Sales confirms the order?",
+              "expected": "Check the inventory to see if the product is in stock"
+            },
+            {
+              "question": "What are the two possible outcomes when checking if a product is in stock?",
+              "expected": "Either the product is in stock (proceed to payment) or not in stock (cancel the order)"
+            },
+            {
+              "question": "What happens if the credit card is not valid during payment processing?",
+              "expected": "The order is cancelled"
+            },
+            {
+              "question": "What is the final step in the order processing workflow after payment is successfully processed?",
+              "expected": "Stock department delivers the order, then the process finishes"
+            }
+      ]
+    },
+    {
+        "image":"image020.png",
+        "queries": [
+            {
+              "question": "What are the two ways a customer can initiate the process to buy a product?",
+              "expected": "By phone booking or online booking"
+            },
+            {
+              "question": "What does the Sales department do after receiving a customer inquiry?",
+              "expected": "After receiving a customer inquiry, sales team makes a sales call or contacts the customer, then proceed with order entry and create an order form"
+            },
+            {
+              "question": "Which department is responsible for performing the credit check?",
+              "expected": "Credit Department"
+            },
+            {
+              "question": "What happens if a customer has bad credit during the credit check process?",
+              "expected": "If a customer has bad credit, the credit evaluation process returns to Management for credit criteria review, and the customer may need to either terminate or resubmit their credit form for further review"
+            },
+            {
+              "question": "What are the two steps the Credit Department performs after a successful credit check?",
+              "expected": "Review accounts receivable balance, then calculate credit terms"
+            },
+            {
+              "question": "What does Management issue after the credit terms are approved?",
+              "expected": "Credit Issued Report"
+            },
+            {
+              "question": "How does the taxi service integrate with the credit application process?",
+              "expected": "The taxi service appears to be the product/service being purchased, with booking handled through phone or online, coordinated by operators and workstation desktops, and fulfilled by taxi drivers"
+            }
+      ]
+    },
+    {
+        "image":"image030.png",
+        "queries": [
+            {
+              "question": "What are the first three steps a Customer Service Representative takes after receiving a service request?",
+              "expected": "The first three steps a Customer Service Representative takes are Receive service request for Information Collection, determines the appropriate service package for the request, and conducts a detailed verification of the customer's information"
+            },
+            {
+              "question": "What happens if a customer is not found in the system during the customer inquiry?",
+              "expected": "Create a new customer record"
+            },
+            {
+              "question": "What are the two validation checks performed after finding an existing customer?",
+              "expected": "Check address validity and check service availability at the address"
+            },
+            {
+              "question": "What happens if the address is found but not validated?",
+              "expected": "The system shows 'Address not Valid' and the customer is notified"
+            },
+            {
+              "question": "What steps are performed if resources are available for the service?",
+              "expected": "If resources are available for the service, the Customer Service Representative performs service portability"
+            },
+            {
+              "question": "What happens if resources are not available during the resource availability check?",
+              "expected": "The customer is notified that the service is not available"
+            },
+            {
+              "question": "What is the final step in the process after all validations are successful?",
+              "expected": "Consolidated pre-order validation results are generated and provided to the customer"
+            }
+      ]
+    },
+    {
+        "image":"image040.png",
+        "queries": [
+          {
+            "question": "What happens if personal information is not correct during the payroll cycle?",
+            "expected": "HR enters corrected personal information and the process loops back"
+          },
+          {
+            "question": "What action is taken when not all employees have reported their hours?",
+            "expected": "Contact employees who didn't report hours"
+          },
+          {
+            "question": "Who reviews the completeness of employee reporting?",
+            "expected": "Payroll department"
+          },
+          {
+            "question": "What happens if paid time off is not approved?",
+            "expected": "Contact the employee to resolve the issue"
+          },
+          {
+            "question": "Who sends the finalized data to the payroll processor?",
+            "expected": "Payroll department"
+          },
+          {
+            "question": "At what point does the payroll cycle officially close?",
+            "expected": "The payroll cycle officially closes during the begining of Phase 1: Payroll Cycle Initiation in an event called Payroll Cycle Closure"
+          }
+      ]
+    },
+    {
+        "image":"image050.png",
+        "queries": [
+            {
+              "question": "Who initiates the expense reporting process?",
+              "expected": "The expense reporting process is initiated by Consultant"
+            },
+            {
+              "question": "What happens when a manager receives an expense report that needs corrections?",
+              "expected": "Return the report to the consultant for corrections"
+            },
+            {
+              "question": "What are the two possible outcomes after a manager reviews an expense report?",
+              "expected": "Either return the report for corrections (No) or forward the report for processing (Yes)"
+            },
+            {
+              "question": "Who is responsible for entering approved expense data into the system?",
+              "expected": "Data Entry Clerk"
+            },
+            {
+              "question": "What is the manager's role in this expense reporting process?",
+              "expected": "The manager's role in the expense reporting process is Receive and review expense reports, determine if they are correct, evaluating the accuracy, and either return them or forward them"
+            },
+            {
+              "question": "What happens after the manager approves an expense report?",
+              "expected": "The report is forwarded to the Data Entry Clerk who enters the data into the system"
+            },
+            {
+              "question": "What must a consultant do if their expense report is returned by the manager?",
+              "expected": "Make the necessary corrections and resubmit the expense report"
+            }
+      ]
+    },
+    {
+        "image":"image060.png",
+        "queries": [
+        {"question": "What happens if the task list is not affected?", "expected": "If the task list is not affected, Process goes directly to refine draft or Draft Refinement"},
+        {"question": "Which actor is responsible for organizing tasks?", "expected": "Business Analyst"},
+        {"question": "What is the decision point about completion?", "expected": "Whether the work is complete or needs further refinement the decision point is called Completion Assessment"},
+        {"question": "When does the process return to review with end user?", "expected": "When the completion assessment stage determines work is not complete, the process returns to review with the end user"},
+        {"question": "What triggers the end of the process?", "expected": "When the completion assessment determines work is complete by the Process Completion event and by the Business Analyst"}
+      ]
+    },
+    {
+        "image":"image070.png",
+        "queries": [
+        {"question": "Who submits the data files?", "expected": "the data files are submitted by the Partner"},
+        {"question": "What are the scheduled processing times?", "expected": "4:00, 7:00 and 13:00"},
+        {"question": "Where do files get moved for processing?", "expected": "Working directory"},
+        {"question": "What happens if processing fails?", "expected": "If processing fails, the system proceeds to Rejection Processing and rejection notification is sent via email to Partner"},
+        {"question": "Which system stores the processed data?", "expected": "System of Record"},
+        {"question": "How are partners notified of success?", "expected": "Partners are notified by Email notification with successful process confirmations"},
+        {"question": "What triggers the file processing sequence?", "expected": "File processing sequence is triggered by the event File processing trigger is activated for processing"},
+        {"question": "Where are rejection notifications sent?", "expected": "Rejection notifications are sent via Email to Partner"}
+      ]
+    },
+    {
+        "image":"image080.png",
+        "queries": [
+        {"question": "Who gets the job ticket initially?", "expected": "CSR (Customer Service Representative)"},
+        {"question": "What happens if proofs are not approved?", "expected": "Process returns to proof creation for revision"},
+        {"question": "Which role schedules the press dates?", "expected": "Plant Manager"},
+        {"question": "How does the customer get notified?", "expected": "The customer gets notified via email by the Customer Service Representative about process results"},
+        {"question": "Who performs the electronic imposition?", "expected": "Pre-Press Operator"},
+        {"question": "What is the final quality control step?", "expected": "The final quality control step is report correctness assessment by Pre-Press Operator or the manager"},
+        {"question": "Where do customer files get migrated to?", "expected": "In-house servers"},
+        {"question": "Which department handles internal scheduling?", "expected": "Plant Manager"}
+      ]
+    },
+    {
+        "image":"image090.png",
+        "queries": [
+        {"question": "Who logs the incident initially?", "expected": "Event Management/Service Desk"},
+        {"question": "What database is searched for configuration items?", "expected": "CMDB (Configuration Management Database)"},
+        {"question": "What happens when no CI is found?", "expected": "Incident analyst is assigned to handle the case"},
+        {"question": "Who gets alerted when a CI is identified?", "expected": "Service Specialist"},
+        {"question": "Which role performs the CI assessment?", "expected": "Service Desk Analyst"},
+        {"question": "What is the next phase after 1.6?", "expected": "Phase 2.1"},
+        {"question": "How are service specialists notified?", "expected": "Service Desk Analyst notifies appropriate service specialist"},
+        {"question": "Who assigns the incident analyst?", "expected": "Service Desk Analyst"}
+      ]
+    },
+    {
+        "image":"image100.png",
+        "queries": [
+        {"question": "Who receives the requirements document?", "expected": "Software Design Team"},
+        {"question": "What happens if external design affects internal design?", "expected": "Process returns to internal design development"},
+        {"question": "Which team writes the code?", "expected": "Software Coding Team"},
+        {"question": "What occurs when bugs are found during testing?", "expected": "Process returns to code development for bug fixing"},
+        {"question": "Who schedules the programming time?", "expected": "Software Development Team"},
+        {"question": "What is developed after the specifications?", "expected": "Internal design to meet specifications"},
+        {"question": "Which role performs QA testing?", "expected": "Software Coding Team"},
+        {"question": "How many decision points are in the process?", "expected": "Two decision points"},
+        {"question": "What triggers a return to code development?", "expected": "When bugs are detected during QA testing or bug detection assessment"},
+        {"question": "Who prepares the release for future build?", "expected": "Software Development Team"}
+      ]
+    }
+    ]

@@ -1,0 +1,770 @@
+{
+  "summary": {
+    "total": 76,
+    "correct": 27,
+    "accuracy_percent": 35.526315789473685,
+    "average_latency": 1.8597368421052631
+  },
+  "details": [
+    {
+      "image": "image010.png",
+      "query": "Which department is responsible for placing a product order?",
+      "expected": "Customer",
+      "response": "The customer is responsible for placing a product order.",
+      "latency": 1.7,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": true
+    },
+    {
+      "image": "image010.png",
+      "query": "What happens if the order is not received during the confirmation step?",
+      "expected": "The order is cancelled",
+      "response": "If the order is not received during the confirmation step, the process moves to cancellation according to the Sequential Flow of Events described in the context.",
+      "latency": 2.11,
+      "bleu": 0.015365418390819783,
+      "rouge_l": 0.15999999731200001,
+      "is_correct": false
+    },
+    {
+      "image": "image010.png",
+      "query": "What does the Stock department do after Sales confirms the order?",
+      "expected": "Check the inventory to see if the product is in stock",
+      "response": "After the Sales team confirms the order, the Stock or Warehouse team checks the inventory to verify if the product is in stock.",
+      "latency": 1.89,
+      "bleu": 0.20617350508583812,
+      "rouge_l": 0.5714285668367348,
+      "is_correct": false
+    },
+    {
+      "image": "image010.png",
+      "query": "What are the two possible outcomes when checking if a product is in stock?",
+      "expected": "Either the product is in stock (proceed to payment) or not in stock (cancel the order)",
+      "response": "The two possible outcomes when checking if a product is in stock are:\n1. If the product is not in stock, the order gets cancelled.\n2. If the product is in stock, the process continues to payment verification.",
+      "latency": 2.73,
+      "bleu": 0.11110969989860409,
+      "rouge_l": 0.2999999956125,
+      "is_correct": false
+    },
+    {
+      "image": "image010.png",
+      "query": "What happens if the credit card is not valid during payment processing?",
+      "expected": "The order is cancelled",
+      "response": "The order will be cancelled if the payment method is invalid.",
+      "latency": 1.19,
+      "bleu": 0.04740604259878138,
+      "rouge_l": 0.3999999960888889,
+      "is_correct": false
+    },
+    {
+      "image": "image010.png",
+      "query": "Which department handles credit card validation and payment processing?",
+      "expected": "Finance",
+      "response": "The text doesn't provide information on which department handles credit card validation and payment processing.",
+      "latency": 1.17,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image010.png",
+      "query": "What is the final step in the order processing workflow after payment is successfully processed?",
+      "expected": "Stock department delivers the order, then the process finishes",
+      "response": "The final step in the order processing workflow after payment is successfully processed is \"Customer Notification\". In this step, the Customer Service Representative informs the customer of process results (approval, denial, or issues).",
+      "latency": 2.71,
+      "bleu": 0.007434360163166208,
+      "rouge_l": 0.10526315457063723,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "What are the two ways a customer can initiate the process to buy a product?",
+      "expected": "By phone booking or online booking",
+      "response": "The two ways a customer can initiate the process to buy a product are by placing a product order in the E-commerce Order Processing Sequence and by initiating the purchase process in the Credit Application Process.",
+      "latency": 2.27,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "What does the Sales department do after receiving a customer inquiry?",
+      "expected": "Make a sales call, then proceed with order entry and create an order form",
+      "response": "After receiving a customer inquiry, the Sales department contacts the customer and processes the initial inquiry.",
+      "latency": 1.25,
+      "bleu": 0.014628063653657535,
+      "rouge_l": 0.15384614884615402,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "Which department is responsible for performing the credit check?",
+      "expected": "Credit Department",
+      "response": "The Credit Department is responsible for performing the credit check.",
+      "latency": 1.14,
+      "bleu": 0.0446323613785333,
+      "rouge_l": 0.33333333055555564,
+      "is_correct": true
+    },
+    {
+      "image": "image020.png",
+      "query": "What happens if a customer has bad credit during the credit check process?",
+      "expected": "The process returns to Management for credit criteria review, and the customer may need to resubmit their credit form",
+      "response": "If a customer has bad credit during the credit evaluation, the process either terminates or requires additional steps. Similarly, during the formal credit check, if the result is not OK (which could be the case for a customer with bad credit), the process may either terminate or require review.",
+      "latency": 2.89,
+      "bleu": 0.00609117754209106,
+      "rouge_l": 0.1538461494452664,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "What are the two steps the Credit Department performs after a successful credit check?",
+      "expected": "Review accounts receivable balance, then calculate credit terms",
+      "response": "After a successful credit check, the Credit Department reviews the accounts receivable balance and then calculates the credit terms.",
+      "latency": 1.58,
+      "bleu": 0.02560744480557418,
+      "rouge_l": 0.41666666222222226,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "What does Management issue after the credit terms are approved?",
+      "expected": "Credit Issued Report",
+      "response": "Management issues the final credit approval documentation after the credit terms are approved.",
+      "latency": 1.05,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image020.png",
+      "query": "How does the taxi service integrate with the credit application process?",
+      "expected": "The taxi service appears to be the product/service being purchased, with booking handled through phone or online, coordinated by operators and workstation desktops, and fulfilled by taxi drivers",
+      "response": "The taxi service appears to integrate with the credit application process as part of an overall business process. It's not explicitly stated how, but it's likely that once a customer's credit application is approved and they purchase a product, the taxi service may be used for product delivery or customer transport. This suggests that the taxi booking process happens in parallel with or shortly after the credit application process.",
+      "latency": 3.65,
+      "bleu": 0.06103851181668747,
+      "rouge_l": 0.25974025535503464,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What are the first three steps a Customer Service Representative takes after receiving a service request?",
+      "expected": "Receive service request, select service package, and gather customer information",
+      "response": "The first three steps a Customer Service Representative takes after receiving a service request are:\n\n1. Service Selection: The CSR determines the appropriate service package based on the request.\n2. Information Collection: The CSR collects comprehensive customer information.\n3. Customer Information Inquiry: The CSR conducts a detailed verification of the customer information.",
+      "latency": 3.01,
+      "bleu": 0.004635487482440636,
+      "rouge_l": 0.13333333013333343,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What happens if a customer is not found in the system during the customer inquiry?",
+      "expected": "Create a new customer record",
+      "response": "If a customer is not found in the system during the customer inquiry, the Customer Service Representative will proceed to create a new customer in the system database. This is referred to as Step 8: New Customer Creation.",
+      "latency": 2.14,
+      "bleu": 0.02412397368972536,
+      "rouge_l": 0.1874999973632813,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What are the two validation checks performed after finding an existing customer?",
+      "expected": "Check address validity and check service availability at the address",
+      "response": "The two validation checks performed after finding an existing customer are Address Validation and Service Availability. In the Address Validation step, the Customer Service Representative checks if the customer's address is valid and current. Following that, in the Service Availability step, they confirm if the service covers the customer's address.",
+      "latency": 3.79,
+      "bleu": 0.005186671025518576,
+      "rouge_l": 0.18604650831800976,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What happens if the address is found but not validated?",
+      "expected": "The system shows 'Address not Valid' and the customer is notified",
+      "response": "If the address is found but not validated, the Customer Service Representative must handle the invalid address issue and notify the customer. This is described in the \"Address Issue Handling\" section.",
+      "latency": 2.17,
+      "bleu": 0.008531104334876973,
+      "rouge_l": 0.27777777353395067,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What steps are performed if resources are available for the service?",
+      "expected": "Perform service portability, check customer credit, and generate pre-order validation results",
+      "response": "If resources are available for the service, the Customer Service Representative will perform Service Portability (Step 16).",
+      "latency": 2.11,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What happens if resources are not available during the resource availability check?",
+      "expected": "The customer is notified that the service is not available",
+      "response": "If resources are not available during the resource availability check, the process returns to Notify Customer (Step 17) via a dashed feedback loop. This is an exception path where the customer is notified of the insufficient resources.",
+      "latency": 2.22,
+      "bleu": 0.03392673192027677,
+      "rouge_l": 0.2926829234027365,
+      "is_correct": false
+    },
+    {
+      "image": "image030.png",
+      "query": "What is the final step in the process after all validations are successful?",
+      "expected": "Consolidated pre-order validation results are generated and provided to the customer",
+      "response": "The final step in the process after all validations are successful is Data Storage. The System of Record stores the validated data in the database.",
+      "latency": 2.1,
+      "bleu": 0.009009113474307318,
+      "rouge_l": 0.06249999548828158,
+      "is_correct": false
+    },
+    {
+      "image": "image040.png",
+      "query": "Who is responsible for completing the entry of new employee information?",
+      "expected": "Human Resources",
+      "response": "The context does not provide specific information on who is responsible for completing the entry of new employee information.",
+      "latency": 1.38,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image040.png",
+      "query": "What happens if personal information is not correct during the payroll cycle?",
+      "expected": "HR enters corrected personal information and the process loops back",
+      "response": "If personal information is not correct during the payroll cycle, the Human Resources department has to enter the corrected personal information. This is referred to as the \"Information Correction\" step. After the corrections are made, the process returns to the validation check to verify the accuracy of all employee personal information.",
+      "latency": 2.98,
+      "bleu": 0.01257559204471173,
+      "rouge_l": 0.17391304007561445,
+      "is_correct": false
+    },
+    {
+      "image": "image040.png",
+      "query": "What action is taken when not all employees have reported their hours?",
+      "expected": "Contact employees who didn't report hours",
+      "response": "When not all employees have reported their hours, the Payroll Department takes the action of reaching out to those employees who haven't submitted their time. This is referred to as \"Contact Employees Who Didn't Report Hours\".",
+      "latency": 2.9,
+      "bleu": 0.01090602900579092,
+      "rouge_l": 0.10526315523545714,
+      "is_correct": true
+    },
+    {
+      "image": "image040.png",
+      "query": "Who reviews the completeness of employee reporting?",
+      "expected": "Payroll department",
+      "response": "The Payroll Department reviews the completeness of employee reporting.",
+      "latency": 1.55,
+      "bleu": 0.023980296761827107,
+      "rouge_l": 0.18181817884297521,
+      "is_correct": true
+    },
+    {
+      "image": "image040.png",
+      "query": "What happens if paid time off is not approved?",
+      "expected": "Contact the employee to resolve the issue",
+      "response": "If the Paid Time Off (PTO) calculations are not approved or correct, the Payroll Department will contact the employee to resolve the PTO discrepancies. This is referred to as the PTO Issue Resolution (Step 13). After resolution, the process returns to PTO validation (Step 12).",
+      "latency": 2.95,
+      "bleu": 0.07611137668875849,
+      "rouge_l": 0.19512194872099942,
+      "is_correct": false
+    },
+    {
+      "image": "image040.png",
+      "query": "Who sends the finalized data to the payroll processor?",
+      "expected": "Payroll department",
+      "response": "The Payroll Department sends the finalized data to the payroll processor.",
+      "latency": 0.98,
+      "bleu": 0.018850319022747353,
+      "rouge_l": 0.16666666388888893,
+      "is_correct": true
+    },
+    {
+      "image": "image040.png",
+      "query": "At what point does the payroll cycle officially close?",
+      "expected": "After payments are produced by the payroll vendor",
+      "response": "The payroll cycle officially closes at the beginning of the payroll processing workflow sequence, during Phase 1: Payroll Cycle Initiation, in the step called \"Payroll Cycle Closure\". This is when Human Resources initiates the payroll cycle closure process.",
+      "latency": 2.48,
+      "bleu": 0.010307860500264256,
+      "rouge_l": 0.10256409930309017,
+      "is_correct": false
+    },
+    {
+      "image": "image050.png",
+      "query": "Who initiates the expense reporting process?",
+      "expected": "Consultant",
+      "response": "The expense reporting process is initiated by the Consultant.",
+      "latency": 0.95,
+      "bleu": 0,
+      "rouge_l": 0.1999999982,
+      "is_correct": true
+    },
+    {
+      "image": "image050.png",
+      "query": "What happens when a manager receives an expense report that needs corrections?",
+      "expected": "Return the report to the consultant for corrections",
+      "response": "When a manager receives an expense report that needs corrections, they return the report to the consultant for corrections. This is part of the Report Correction Process. The report then goes back to the consultant for resubmission.",
+      "latency": 2.23,
+      "bleu": 0.1227616815524213,
+      "rouge_l": 0.3333333302006173,
+      "is_correct": true
+    },
+    {
+      "image": "image050.png",
+      "query": "What are the two possible outcomes after a manager reviews an expense report?",
+      "expected": "Either return the report for corrections (No) or forward the report for processing (Yes)",
+      "response": "The two possible outcomes after a manager reviews an expense report are either the report is forwarded for approval, or it is returned to the consultant for corrections.",
+      "latency": 1.78,
+      "bleu": 0.019427446513842185,
+      "rouge_l": 0.22857142426122457,
+      "is_correct": false
+    },
+    {
+      "image": "image050.png",
+      "query": "Who is responsible for entering approved expense data into the system?",
+      "expected": "Data Entry Clerk",
+      "response": "The Data Entry Clerk is responsible for entering approved expense data into the system.",
+      "latency": 1.29,
+      "bleu": 0.07069301148938888,
+      "rouge_l": 0.3529411735640139,
+      "is_correct": true
+    },
+    {
+      "image": "image050.png",
+      "query": "What is the manager's role in this expense reporting process?",
+      "expected": "Receive and review expense reports, determine if they are correct, and either return them or forward them",
+      "response": "In the expense reporting process, the manager's role includes receiving the submitted expense report for review, evaluating the accuracy and completeness of the report, and making the decision to either approve or reject it. If the report is approved, the manager forwards it to the data entry clerk for input into the financial system. If the report is not approved, the manager returns it to the consultant for corrections.",
+      "latency": 2.68,
+      "bleu": 0.003940018995721922,
+      "rouge_l": 0.13793103064803816,
+      "is_correct": false
+    },
+    {
+      "image": "image050.png",
+      "query": "What happens after the manager approves an expense report?",
+      "expected": "The report is forwarded to the Data Entry Clerk who enters the data into the system",
+      "response": "After the manager approves an expense report, it is forwarded to the data entry clerk. The data entry clerk then inputs the approved expense report information into the financial system. This is part of the data processing phase.",
+      "latency": 2.4,
+      "bleu": 0.08667842943607579,
+      "rouge_l": 0.3809523765079365,
+      "is_correct": false
+    },
+    {
+      "image": "image050.png",
+      "query": "What must a consultant do if their expense report is returned by the manager?",
+      "expected": "Make the necessary corrections and resubmit the expense report",
+      "response": "If their expense report is returned by the manager, the consultant must make the necessary corrections and resubmit the report for review.",
+      "latency": 1.54,
+      "bleu": 0.23933115010284964,
+      "rouge_l": 0.4615384572781066,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "Who reviews the information at the start?",
+      "expected": "Business Analyst",
+      "response": "Human Resources reviews the information at the start.",
+      "latency": 1.49,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "What happens if the task list is not affected?",
+      "expected": "Process goes directly to refine draft",
+      "response": "If the task list is not affected, the process proceeds to Draft Refinement.",
+      "latency": 1.31,
+      "bleu": 0.01553712569276035,
+      "rouge_l": 0.11111110666666683,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "Which actor is responsible for organizing tasks?",
+      "expected": "Business Analyst",
+      "response": "The actor responsible for organizing tasks is the Business Analyst.",
+      "latency": 1.03,
+      "bleu": 0.021105340631872645,
+      "rouge_l": 0.33333333055555564,
+      "is_correct": true
+    },
+    {
+      "image": "image060.png",
+      "query": "What is the decision point about completion?",
+      "expected": "Whether the work is complete or needs further refinement",
+      "response": "The decision point about completion is whether or not the work is complete. This is evaluated by the End User or Business Analyst. If the requirements are not fully met, the process returns to the End User Review Session. If the requirements are fully met, the process moves on to Process Completion.",
+      "latency": 2.77,
+      "bleu": 0.01873214866001142,
+      "rouge_l": 0.2380952347278912,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "Who provides the final refinement input?",
+      "expected": "End User",
+      "response": "The text does not provide specific information on who provides the final refinement input.",
+      "latency": 1.79,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "When does the process return to review with end user?",
+      "expected": "When the completion assessment determines work is not complete",
+      "response": "The process returns to review with the end user during the \"Completion Assessment\" stage. This happens when the End User/Business Analyst evaluates the requirements and finds that they are not fully met. In this case, they return to the \"End User Review Session\", creating a feedback loop.",
+      "latency": 3.22,
+      "bleu": 0.004649189828106597,
+      "rouge_l": 0.07999999704800012,
+      "is_correct": false
+    },
+    {
+      "image": "image060.png",
+      "query": "What triggers the end of the process?",
+      "expected": "When the completion assessment determines work is complete",
+      "response": "The end of the process is triggered by the completion assessment. If the work is complete, as evaluated by the End User/Business Analyst, the process moves towards Process Completion, where the workflow is concluded and the final product is delivered by the Business Analyst.",
+      "latency": 2.62,
+      "bleu": 0.012517970592156697,
+      "rouge_l": 0.2564102531492439,
+      "is_correct": false
+    },
+    {
+      "image": "image070.png",
+      "query": "Who submits the data files?",
+      "expected": "Partner",
+      "response": "The data files are submitted by the Partner.",
+      "latency": 1.39,
+      "bleu": 0,
+      "rouge_l": 0.2222222202469136,
+      "is_correct": true
+    },
+    {
+      "image": "image070.png",
+      "query": "What are the scheduled processing times?",
+      "expected": "4:00, 7:00 and 13:00",
+      "response": "The scheduled processing times are at 4:00, 7:00, and 13:00.",
+      "latency": 1.5,
+      "bleu": 0.025098621243978974,
+      "rouge_l": 0.4285714244897959,
+      "is_correct": false
+    },
+    {
+      "image": "image070.png",
+      "query": "Where do files get moved for processing?",
+      "expected": "Working directory",
+      "response": "Files get moved to the processing location, also referred to as the working directory, for processing.",
+      "latency": 1.68,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": true
+    },
+    {
+      "image": "image070.png",
+      "query": "What happens if processing fails?",
+      "expected": "Process rejects are created and rejection notifications are sent",
+      "response": "If processing fails, the system proceeds to Rejection Processing. The FTP Server, acting as the actor, creates a rejection record for the failed processing. After this, a Rejection Notification event occurs where the partner is notified of the processing failure. This partner receives the rejection notification via email.",
+      "latency": 3.24,
+      "bleu": 0.0038253628844009133,
+      "rouge_l": 0.04444444152098785,
+      "is_correct": false
+    },
+    {
+      "image": "image070.png",
+      "query": "Which system stores the processed data?",
+      "expected": "System of Record",
+      "response": "The System of Record stores the processed data.",
+      "latency": 1.15,
+      "bleu": 0.1374708101760565,
+      "rouge_l": 0.5454545414876033,
+      "is_correct": true
+    },
+    {
+      "image": "image070.png",
+      "query": "How are partners notified of success?",
+      "expected": "Email notification with process confirmations",
+      "response": "Partners are notified of successful processing through an email notification.",
+      "latency": 1.16,
+      "bleu": 0,
+      "rouge_l": 0.13333332888888905,
+      "is_correct": false
+    },
+    {
+      "image": "image070.png",
+      "query": "What triggers the file processing sequence?",
+      "expected": "File trigger activation after files are moved to working directory",
+      "response": "The file processing trigger activation event triggers the file processing sequence. This is initiated by the Straight-through Processing System.",
+      "latency": 1.66,
+      "bleu": 0.02153320854081468,
+      "rouge_l": 0.1538461491124262,
+      "is_correct": false
+    },
+    {
+      "image": "image070.png",
+      "query": "Where are rejection notifications sent?",
+      "expected": "Email notification to Partner",
+      "response": "Rejection notifications are sent via email.",
+      "latency": 0.93,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image080.png",
+      "query": "Who gets the job ticket initially?",
+      "expected": "CSR (Customer Service Representative)",
+      "response": "The job ticket is initially obtained by the CSR (Customer Service Representative).",
+      "latency": 1.23,
+      "bleu": 0.08430118946484098,
+      "rouge_l": 0.4999999962500001,
+      "is_correct": true
+    },
+    {
+      "image": "image080.png",
+      "query": "What happens if proofs are not approved?",
+      "expected": "Process returns to proof creation for revision",
+      "response": "If the pre-press proofs are not approved, the process returns to Proof Creation, creating a revision loop until approval is achieved.",
+      "latency": 2.15,
+      "bleu": 0.021377723941583868,
+      "rouge_l": 0.22222221838134434,
+      "is_correct": false
+    },
+    {
+      "image": "image080.png",
+      "query": "Which role schedules the press dates?",
+      "expected": "Plant Manager",
+      "response": "The Plant Manager is the role that schedules the press dates.",
+      "latency": 1.3,
+      "bleu": 0.03986357128268015,
+      "rouge_l": 0.33333333055555564,
+      "is_correct": true
+    },
+    {
+      "image": "image080.png",
+      "query": "How does the customer get notified?",
+      "expected": "CSR informs customer of scheduled print date",
+      "response": "The customer gets notified by the Customer Service Representative. The mode of communication is email-based for both success and failure scenarios. If there's a failure or exception such as an invalid address, service unavailability, or insufficient resources, the customer will also be notified via this method.",
+      "latency": 2.16,
+      "bleu": 0.004753731294736233,
+      "rouge_l": 0.08510638044363973,
+      "is_correct": false
+    },
+    {
+      "image": "image080.png",
+      "query": "Who performs the electronic imposition?",
+      "expected": "Pre-Press Operator",
+      "response": "The electronic imposition of layout is performed by the Pre-Press Operator.",
+      "latency": 1.52,
+      "bleu": 0.018850319022747353,
+      "rouge_l": 0.30769230508875745,
+      "is_correct": true
+    },
+    {
+      "image": "image080.png",
+      "query": "What is the final quality control step?",
+      "expected": "QC Pre-Press Proofs by Pre-Press Operator",
+      "response": "The final quality control step is the \"Report Correctness Assessment\" where the manager evaluates the accuracy, completeness, and policy compliance of the reports. Reports that are correct proceed to data entry, while incorrect reports are returned to the consultant for revision.",
+      "latency": 2.41,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": false
+    },
+    {
+      "image": "image080.png",
+      "query": "Where do customer files get migrated to?",
+      "expected": "In-house servers",
+      "response": "Customer files are migrated to in-house servers.",
+      "latency": 0.93,
+      "bleu": 0,
+      "rouge_l": 0.22222221876543213,
+      "is_correct": true
+    },
+    {
+      "image": "image080.png",
+      "query": "Which department handles internal scheduling?",
+      "expected": "Plant Manager",
+      "response": "The Plant Manager is the actor who handles internal scheduling within plant operations.",
+      "latency": 1.22,
+      "bleu": 0.03285702044797773,
+      "rouge_l": 0.26666666435555564,
+      "is_correct": true
+    },
+    {
+      "image": "image090.png",
+      "query": "Who logs the incident initially?",
+      "expected": "Event Management/Service Desk",
+      "response": "The incident is initially logged by the Event Management/Service Desk.",
+      "latency": 1.1,
+      "bleu": 0.0446323613785333,
+      "rouge_l": 0.4615384579881657,
+      "is_correct": true
+    },
+    {
+      "image": "image090.png",
+      "query": "What database is searched for configuration items?",
+      "expected": "CMDB (Configuration Management Database)",
+      "response": "The Configuration Management Database (CMDB) is searched for configuration items.",
+      "latency": 1.28,
+      "bleu": 0.021105340631872645,
+      "rouge_l": 0.14285713877551035,
+      "is_correct": false
+    },
+    {
+      "image": "image090.png",
+      "query": "What happens when no CI is found?",
+      "expected": "Incident analyst is assigned to handle the case",
+      "response": "When no Configuration Item (CI) is found, the process proceeds to Incident Analyst Assignment. In this step, the Service Desk Analyst assigns the incident to an available incident analyst for further investigation.",
+      "latency": 2.39,
+      "bleu": 0.008724383945340666,
+      "rouge_l": 0.11428571075918378,
+      "is_correct": false
+    },
+    {
+      "image": "image090.png",
+      "query": "Who gets alerted when a CI is identified?",
+      "expected": "Service Specialist",
+      "response": "The appropriate service specialist gets alerted when a Configuration Item (CI) is identified.",
+      "latency": 1.13,
+      "bleu": 0,
+      "rouge_l": 0.0,
+      "is_correct": true
+    },
+    {
+      "image": "image090.png",
+      "query": "Which role performs the CI assessment?",
+      "expected": "Service Desk Analyst",
+      "response": "The CI (Configuration Item) assessment is performed by the Service Desk Analyst.",
+      "latency": 1.33,
+      "bleu": 0.03602080288207364,
+      "rouge_l": 0.39999999680000003,
+      "is_correct": true
+    },
+    {
+      "image": "image090.png",
+      "query": "What is the next phase after 1.6?",
+      "expected": "Phase 2.1",
+      "response": "The text does not provide information on what the next phase after 1.6 is.",
+      "latency": 1.42,
+      "bleu": 0,
+      "rouge_l": 0.1111111083333334,
+      "is_correct": false
+    },
+    {
+      "image": "image090.png",
+      "query": "How are service specialists notified?",
+      "expected": "Service Desk Analyst notifies appropriate service specialist",
+      "response": "Service specialists are notified by the Service Desk Analyst. The Service Desk Analyst alerts the appropriate service specialist about the Configuration Item-related incident.",
+      "latency": 1.78,
+      "bleu": 0.06893826633458067,
+      "rouge_l": 0.4999999958680556,
+      "is_correct": false
+    },
+    {
+      "image": "image090.png",
+      "query": "Who assigns the incident analyst?",
+      "expected": "Service Desk Analyst",
+      "response": "The Service Desk Analyst assigns the incident analyst.",
+      "latency": 0.84,
+      "bleu": 0.1374708101760565,
+      "rouge_l": 0.5454545414876033,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "Who receives the requirements document?",
+      "expected": "Software Design Team",
+      "response": "The Software Design Team receives the requirements document.",
+      "latency": 1.14,
+      "bleu": 0.1374708101760565,
+      "rouge_l": 0.5454545414876033,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "What happens if external design affects internal design?",
+      "expected": "Process returns to internal design development",
+      "response": "If the external design necessitates changes in the internal design, the process returns to Internal Design Development. This creates a design iteration loop.",
+      "latency": 2.99,
+      "bleu": 0.020828838183973034,
+      "rouge_l": 0.23076922721893492,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "Which team writes the code?",
+      "expected": "Software Coding Team",
+      "response": "The Software Coding Team writes the code.",
+      "latency": 1.25,
+      "bleu": 0.16348126556655487,
+      "rouge_l": 0.5999999958,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "What occurs when bugs are found during testing?",
+      "expected": "Process returns to code development for bug fixing",
+      "response": "When bugs are found during testing, the software coding team returns to code development. This creates a bug fix iteration loop.",
+      "latency": 1.32,
+      "bleu": 0.04857956790684703,
+      "rouge_l": 0.3448275822116528,
+      "is_correct": false
+    },
+    {
+      "image": "image100.png",
+      "query": "Who schedules the programming time?",
+      "expected": "Software Development Team",
+      "response": "The programming time is scheduled by the Software Development Team.",
+      "latency": 1.16,
+      "bleu": 0.0446323613785333,
+      "rouge_l": 0.4615384579881657,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "What is developed after the specifications?",
+      "expected": "Internal design to meet specifications",
+      "response": "After the specifications are developed, the internal design is developed to meet those specifications.",
+      "latency": 1.2,
+      "bleu": 0.03592143420342892,
+      "rouge_l": 0.4705882311418686,
+      "is_correct": false
+    },
+    {
+      "image": "image100.png",
+      "query": "Which role performs QA testing?",
+      "expected": "Software Coding Team",
+      "response": "The role that performs QA testing is the Software Coding Team.",
+      "latency": 1.28,
+      "bleu": 0.03986357128268015,
+      "rouge_l": 0.42857142520408165,
+      "is_correct": true
+    },
+    {
+      "image": "image100.png",
+      "query": "How many decision points are in the process?",
+      "expected": "Two decision points",
+      "response": "There are three critical decision points in the process. The first two involve the Software Development Team, Software Design Team, and Software Coding Team with decisions on design compatibility assessment and bug detection evaluation. The third decision point is handled by the CSR, Plant Manager, and Pre-Press Operator with a decision on proof approval.",
+      "latency": 3.66,
+      "bleu": 0.0071646785744866204,
+      "rouge_l": 0.08888888764444446,
+      "is_correct": false
+    },
+    {
+      "image": "image100.png",
+      "query": "What triggers a return to code development?",
+      "expected": "When bugs are found during QA testing",
+      "response": "A return to code development is triggered when bugs are found during the bug detection assessment.",
+      "latency": 1.69,
+      "bleu": 0.1531024544118244,
+      "rouge_l": 0.34782608272211724,
+      "is_correct": false
+    },
+    {
+      "image": "image100.png",
+      "query": "Who prepares the release for future build?",
+      "expected": "Software Development Team",
+      "response": "The Software Development Team prepares the release for future build.",
+      "latency": 1.56,
+      "bleu": 0.10445522730720382,
+      "rouge_l": 0.4615384579881657,
+      "is_correct": true
+    }
+  ]
+}
