@@ -55,29 +55,18 @@ Add your OpenAI API key to a .env file in the root directory:
 OPENAI_API_KEY=your-openai-api-key
 ```
 
-## Running the App
+### 6. Running the App
 Start the Streamlit app:
 ```
 streamlit run streamlit_app.py
 ```
 
-## 🔍 Model Research
-This project involved in-depth [research]() to identify the most suitable models for the task of image-to-text question answering.
+## 🔍 Model Research and Technical Report
+This project involved in-depth [research](https://drive.google.com/file/d/1K6cyNHJG3BmI4eEiB6rUrN2T-clfDHBI/view?usp=sharing) to identify the most suitable models for the task of image-to-text question answering. References are in page 9 and technical report starts from page 10 where I explain the system architecture and experiment results.
 
 Investigated the need for structured text extraction and context-based question answering over domain-specific swimlane diagrams.
 
-### Model Comparison & Testing
-Compared various combinations of:
-
-- OCR backends (Tesseract vs. PaddleOCR vs. EasyOCR)
-
-- LLMs for QA (OpenAI GPT models, local alternatives)
-
-- Retrieval mechanisms (FAISS + LangChain + OpenAI Embeddings)
-
-
-
-✅ Final Model Choice
+### Experiments
 
 - OCR: Chose PaddleOCR for its high accuracy in extracting layout-sensitive and multilingual text.
 
@@ -88,14 +77,14 @@ Compared various combinations of:
 
 The selected combination offered:
 
-- High accuracy on domain-restricted answers.
+- High accuracy (88.9%) on domain-restricted answers.
 
 - Low latency (~2 seconds per query).
 
 - Minimal hallucinations due to retrieval grounding.
 
 
-## 📈 Evaluation Metrics
+### Evaluation Metrics
 Evaluation was done using a mix of text similarity and domain precision metrics:
 
  - BLEU: Measures n-gram overlap between generated and ground truth answers.
@@ -106,7 +95,7 @@ Evaluation was done using a mix of text similarity and domain precision metrics:
 
 - Common Words: Simple token match threshold for baseline accuracy.
 
-✅ Answer was considered correct if any one metric met its respective threshold.
+Answer was considered correct if any one metric met its respective threshold.
 
 ![Evaluation Accuracy Chart](accuracy_chart.png)
 
@@ -117,13 +106,5 @@ Evaluation was done using a mix of text similarity and domain precision metrics:
 | 2       | 76      | 50      | 65.7%     | 2s          |
 | 3       | 75      | 59      | 78.6%     | 2s          |
 | 4       | 72      | 64      | **88.8%** | 2s          |
-
-Each iteration involved:
-
-- Refining ground truth answers.
-
-- Tuning evaluation thresholds.
-
-- Removing redundant or ambiguous queries.
 
 Final result: 64 out of 72 queries correctly answered in the 4th iteration, showing high domain-specific comprehension and contextual accuracy.
